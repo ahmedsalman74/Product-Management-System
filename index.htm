@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="How to store form data in a json file with php">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUDS</title>
+</head>
+
+<body>
+
+    <div class="crud">
+        <div class="head">
+            <H1>CRUDS</H1>
+            <p>Project management system</p>
+
+        </div>
+        <div class="input">
+            <input type="text" name="title" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" name="price" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" name="taxes" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" name="ads" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" name="discount" id="discount" placeholder="discount">
+                <small id="total"></small>
+
+
+            </div>
+            <input type="number" name="count" id="count" placeholder="count">
+            <input type="text" name="category" id="category" placeholder="category">
+            <button id="submit">creat</button>
+        </div>
+        <div class="output">
+            <div class="searchdiv">
+                <input type="text" name="search" id="search" placeholder="search">
+                <div class="searchBtn">
+                    <button id="searchTitle">Search By title</button>
+                    <button id="searchCategory">Search By Category</button>
+
+
+                </div>
+            </div>
+            <div id="deleteAll">
+
+
+            </div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody" >     
+                       
+
+
+                    
+                </tbody>
+
+            </table>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
+<script src="main.js"></script>
